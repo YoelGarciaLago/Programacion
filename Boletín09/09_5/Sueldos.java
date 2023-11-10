@@ -16,8 +16,9 @@ public class Sueldos {
     Scanner sc=new Scanner(System.in);
   
     public void ContadorSueldos(){
-      System.out.println("Pon el salario (no puede ser 0 o menos): ");
+      
         do{
+            System.out.println("Pon el salario (no puede ser 0 o menos): ");
            i = sc.nextFloat();
         if(i<1000){
             sueldosBajos++;
