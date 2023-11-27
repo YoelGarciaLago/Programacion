@@ -77,7 +77,7 @@ public class Garaje {
             JOptionPane.showMessageDialog(null, "Completo :/");
             int respuesta=JOptionPane.showConfirmDialog(null, "Ves a alguien saliendo?");
             if(respuesta==JOptionPane.NO_OPTION){
-                JOptionPane.showMessageDialog(null, "Lo sineto, tendrá que buscaar otro lugar para aparcar ;(");
+                JOptionPane.showMessageDialog(null, "Lo siento, tendrá que buscaar otro lugar para aparcar ;(");
             }
             else if(respuesta==JOptionPane.YES_OPTION){
                 aparcados--;
