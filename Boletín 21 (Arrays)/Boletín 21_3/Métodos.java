@@ -92,6 +92,18 @@ public class Métodos {
             JOptionPane.showMessageDialog(null, "Pues no se mostrará");
         }
     }
-    
+    public void listaAprobados (Map <String,Integer> mapa){
+        Map <String, Integer> mapaAprobados = mapa.entrySet()
+                .stream()
+                .filter(entry -> entry.getValue()>= 5)
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey, 
+                        Map.Entry::getValue
+                ));
+        System.out.println("Lista de aprobados: ");
+        for (Map.Entry<String,Integer> salida : mapaAprobados.entrySet()){
+            System.out.println("Alumno: " + salida.getKey() + "\tNota: " + salida.getValue());
+        }
+    }
     
 }

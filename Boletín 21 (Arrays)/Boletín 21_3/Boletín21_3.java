@@ -52,6 +52,8 @@ public class Boletín21_3 {
             System.out.println("Alumno: " + entry.getKey() + "\tNota: " + entry.getValue());
             }
         
+        mtd.listaAprobados(mapa);
+        
         //Buscador de alumnos 
         resp = JOptionPane.showConfirmDialog(null, "¿Quieres buscar a un alumno?");
         if(resp == JOptionPane.YES_OPTION){
